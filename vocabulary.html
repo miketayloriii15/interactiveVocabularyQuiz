@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive Vocabulary Quiz</title>
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootsrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Roboto Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+        <style>
+            .instructions {
+                text-align: center;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- Header/Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="left-section">
+                <img src="./assets/images/companylogo.jpg" alt="Logo" class="logo">
+                <span class="title">All American School of English</span>
+            </div>
+    
+            <div class="menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vocabulary.html" class="nav-link">Vocabulary</a>
+                <a href="quiz.html" class="nav-link">Quiz</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+    
+        </nav>
+       
+       
+    </header>
+
+   
+
+
+    <!--Hero Section -->
+
+    <!--Instructions -->
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>"Six cards will display on your screen. Refresh your browser or click "New Cards" at the bottom right to load six new
+        random cards from our lesson vocabulary. When you're ready, test yourself in the Quiz tab. To see the full word list,
+        click "World Library" below."</p>
+    </div>
+
+    <a href ="allwords.html">
+        <button class="allWords" type ="button">Word Library</button>
+    </a>
+    
+    
+    
+
+    <!-- Vocabualry Flash Cards-->
+    <div id="vocabularyFlashCard">
+        <h1>Vocabulary Flash Cards</h1>
+    </div>
+    <div id="flashcardContainer" class="flashcard-container"></div>
+    
+    
+    <!-- Reload Button with Image -->
+    <button id="reloadButton" onclick="reloadPage()">New Cards</button>
+    
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+    
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-left">
+        <p>Connect & Learn with us!</p>
+        <div class="social-links">
+            <a href="http://www.tiktok.com/@all.american.eng?" target="_blank" rel="noopener noreferrer" title="TikTok"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="http://www.instagram.com/all.american.eng?igsh=OTRpb2hhOG9j-NDN1" target="_blank" rel="noopener noreferrer"
+                title="TikTok"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p>&copy; 2024 All American English Teaching Compay. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<!-- SheetJS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<!-- jQuery (Google) CDN Link/ Bootstrap CDN JavaScript Link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+<!-- JavaScript File Link -->
+<script src="main.js"></script>
+
+</body>
+
+</html>
